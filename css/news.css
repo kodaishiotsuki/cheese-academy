@@ -1,0 +1,163 @@
+/********** 共通 **********/
+body {
+  font-size: 16px;
+  margin: auto;
+}
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+/********** 共通 *********/
+
+/********** header ********/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  height: 150px;
+  border-bottom: 1px solid #efefef;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+ul li {
+  display: table-cell;
+  min-width: 50px;
+}
+ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: #e71b1f;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  margin-right: 35px;
+}
+/********** header ********/
+
+/***** news *****/
+.news {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news_tittle h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.news_tittle h2 span {
+  font-size: 2.5rem;
+}
+
+.news_box1,
+.news_box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1500px;
+}
+
+.news_box2 {
+  margin-top: 100px;
+}
+
+.news_img {
+  width: 400px;
+}
+
+.news_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.news_btn {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.news_btn a {
+  width: 350px;
+  border: 1px solid #212020;
+  text-align: center;
+  padding: 20px 80px;
+  text-decoration: none;
+  color: #212020;
+}
+
+.news_btn a:hover {
+  background: #212020;
+  color: #fff;
+}
+
+.news_box1,
+.news_box2 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/pexels-cottonbro-3944454.jpg) repeat-x;
+  background-size: 50%;
+  -webkit-animation: scroll-anim 5s linear infinite;
+  animation: scroll-anim 5s linear infinite;
+  padding: 100px 0;
+}
+
+@-webkit-keyframes scroll-anim {
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes scroll-anim {
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.news_img {
+  background-color: #efefef;
+  padding: 30px;
+}
+
+/***** news *****/
+
+/***** footer *****/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.footer_left {
+  margin-left: 120px;
+}
+
+.footer_right img {
+  margin-right: 80px;
+}
+/***** footer *****/

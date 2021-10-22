@@ -1,0 +1,338 @@
+/********** 共通 **********/
+body {
+  font-size: 16px;
+  margin: auto;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+/********** 共通 *********/
+
+/********** header **********/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  height: 150px;
+  border-bottom: 1px solid #efefef;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+ul li {
+  display: table-cell;
+  min-width: 50px;
+}
+ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: #e71b1f;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  margin-right: 35px;
+}
+/********** header **********/
+
+/***** title *****/
+.tittle {
+  background: url(../img/mainbg.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+.tittle::before {
+  content: "";
+  position: absolute;
+  /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.tittle h1 {
+  font-size: 80px;
+  text-shadow: 0 0 10px #333;
+}
+
+.tittle p {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #333;
+}
+
+
+/***** title *****/
+
+/***** about *****/
+.about {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.about_txt h2 {
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.about_txt h2 span {
+  font-size: 1.3rem;
+  display: block;
+}
+
+/* #about strong {
+  font-size: 2rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 120px auto 200px;
+    position: relative;
+}
+
+#about strong::before , strong::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#about strong::before {
+  border-left: solid 1px #212020;
+    border-top: solid 1px #212020;
+    top: -80px;
+    left: 250px;
+}
+
+#about strong::after {
+  border-right: solid 1px #212020;
+    border-bottom: solid 1px #212020;
+    bottom: -80px;
+    right: 250px;
+} */
+
+.about_btn {
+  position: relative;
+  text-align: right;
+  margin-top: -50px;
+  padding-right: 200px;
+}
+
+.about_btn a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.about_btn a::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 3px;
+  background: #212020;
+  bottom: -8px;
+  left: 0;
+}
+
+.about_btn a::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  border-top: 3px solid;
+  border-color: #212020;
+  transform: rotate(35deg);
+  right: -43px;
+  top: 23px;
+}
+/***** about *****/
+
+/***** course *****/
+.course {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 200px 0;
+}
+
+.course_txt h2 {
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.course_txt h2 span {
+  font-size: 1.3rem;
+  display: block;
+}
+
+.course_btn {
+  position: relative;
+  text-align: right;
+  padding-right: 200px;
+  margin-top: -5px;
+}
+
+.course_btn a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.course_btn a::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 3px;
+  background: white;
+  bottom: -8px;
+  left: 0;
+}
+
+.course_btn a::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  border-top: 3px solid;
+  border-color: white;
+  transform: rotate(35deg);
+  right: -43px;
+  top: 23px;
+}
+/***** course *****/
+
+/***** news *****/
+.news {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.news_txt h2 {
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.news_txt h2 span {
+  font-size: 1.3rem;
+  display: block;
+}
+
+.news_btn {
+  position: relative;
+  text-align: right;
+  padding-right: 200px;
+  margin-top: -5px;
+}
+
+.news_btn a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.news_btn a::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: black;
+}
+
+.news_btn a::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  border-top: 3px solid;
+  border-color: black;
+  transform: rotate(35deg);
+  right: -43px;
+  top: 23px;
+}
+/***** news *****/
+
+/***** footer *****/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_left {
+  margin-left: 120px;
+}
+
+.footer_right img {
+  margin-right: 80px;
+}
+/***** footer *****/
+
+.tittle h1, .tittle p {
+  -webkit-animation: slideIn 1.6s infinite;
+          animation: slideIn 1.6s infinite;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

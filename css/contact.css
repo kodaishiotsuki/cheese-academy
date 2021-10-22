@@ -1,0 +1,144 @@
+/********** 共通 **********/
+body {
+  font-size: 16px;
+  margin: auto;
+}
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+p {
+  line-height: 2;
+}
+/********** 共通 *********/
+
+/********** header ********/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  height: 150px;
+  border-bottom: 1px solid #efefef;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+ul li {
+  display: table-cell;
+  min-width: 50px;
+}
+ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: #e71b1f;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  margin-right: 35px;
+}
+/********** header ********/
+
+/***** contact *****/
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact_btn {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact_btn a {
+  width: 350px;
+  border: 1px solid #212020;
+  text-align: center;
+  padding: 20px 80px;
+  text-decoration: none;
+  color: #212020;
+}
+
+.contact_btn a:hover {
+  background: #212020;
+  color: #fff;
+}
+
+.contact_tittle h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.contact_tittle h2 span {
+  font-size: 2.5rem;
+}
+
+.contact_tittle h3 {
+  background: #212020;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.text {
+  height: 36px;
+  width: 328px;
+}
+
+.dtl {
+  height: 108px;
+  width: 328px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.form td {
+  padding-right: 50px;
+  padding-bottom: 25px;
+}
+
+td {
+  font-size: 1.2rem;
+}
+/***** footer *****/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.footer_left {
+  margin-left: 120px;
+}
+
+.footer_right img {
+  margin-right: 80px;
+}
+/***** footer *****/

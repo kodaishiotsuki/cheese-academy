@@ -1,0 +1,110 @@
+/********** 共通 **********/
+body {
+  font-size: 16px;
+  margin: auto;
+}
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+/********** 共通 *********/
+
+/********** header ********/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  height: 150px;
+  border-bottom: 1px solid #efefef;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+ul li {
+  display: table-cell;
+  min-width: 50px;
+}
+ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: #e71b1f;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  margin-right: 35px;
+}
+/********** header ********/
+
+
+/***** access *****/
+.access1 {
+  text-align: center;
+}
+
+.access_tittle h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.access_tittle h2 span {
+  font-size: 2.5rem;
+}
+
+iframe {
+  height: 800px;
+  width: 90%;
+}
+
+table {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.info td {
+  padding-left: 50px;
+  padding-bottom: 25px;
+  font-size: 1.4rem;
+}
+/***** access *****/
+
+/***** footer *****/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.footer_left {
+  margin-left: 120px;
+}
+
+.footer_right img {
+  margin-right: 80px;
+}
+/***** footer *****/
